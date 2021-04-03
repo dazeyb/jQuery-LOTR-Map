@@ -103,8 +103,7 @@ const makeHobbits = () => {
 //end of keepItSecretKeepItSafe
 };
 
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 3 complete - Made the ring and gave it to Frodo".
+
 
 // ============
 // Chapter 4
@@ -113,10 +112,21 @@ const makeBaddies = () => {
 
   // 1. display an unordered list of baddies in Mordor
 
-  // 2. give each of the baddies a class of "baddy"
 
-  // 3. remember to append them to Mordor
+
+  const $baddiesList = $("<ul id='Baddies-List'>");
+  $("#Mordor").append($baddiesList);
+
+    for(let i = 0; i < baddies.length; i++){
+      
+      const $listItemBaddy = $(`<li class="baddy">${baddies[i]}</li>`);
+      $($baddiesList).append($listItemBaddy);
+    }
+
+//end of makeBaddies
 };
+
+
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 4 complete - Made the Baddies"..
