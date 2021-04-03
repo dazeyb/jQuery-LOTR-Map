@@ -56,35 +56,16 @@ const $sectionMiddleEarth = $("<section id='middle-earth'></section>");
 
 $("body").append($sectionMiddleEarth);
   
-  // 3. use a for loop to iterate over the lands array that does the following:
-  //   3a. creates an article tag (there should be one for each land when the loop is done)
+  // 3abcd. use a for loop to iterate over the lands array that does the following:
 
-
-
-
+  // Goes through lands array, pumps out article with land id, h1 inside article with land name, appends all to middle-earth section
   for(let i = 0; i < lands.length; i++){
-    // let landName = lands[i];
 
+    const $article = $(`<article id=${lands[i]}>
+    <h1>"${lands[i]}"</h1></article>`);$("#middle-earth").append($article);
+  }
 
-    const $article = $(`<article id=${lands[i]}></article>`);
-    $("#middle-earth").append($article);
-  // $("body").$sectionMiddleEarth.append($article);
-
-  // ${lands[i]}
-  //$("body").$sectionMiddleEarth.$article  ("placeholder", lands[i]);
-
-}  
-
-
-  //   3b. gives each land article an `id` tag of the corresponding land name
-
-  
-  //   3c. includes an h1 with the name of the land inside each land article
-
-  
-  //   3d. appends each land to the middle-earth section
-
-
+//end of makeMiddle Earth
 };
 
 // COMMIT YOUR WORK
