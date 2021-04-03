@@ -77,34 +77,30 @@ const makeHobbits = () => {
 
   console.log('Make hobbits');
 
-  // 81-82 makes UL inside the Shire with id Hobbit-List
+  // // 81-82 makes UL inside the Shire with id Hobbit-List
   const $hobbitList = $("<ul id='Hobbit-List'>");
   $("#The-Shire").append($hobbitList);
   
     for(let i = 0; i < hobbits.length; i++){
       const $listItemHobbit = $(`<li class="hobbit">${hobbits[i]}</li>`);
-      $("#The-Shire").append($listItemHobbit);
+      $($hobbitList).append($listItemHobbit);
     }
 
 //end of makeHobbits
 };
 
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 2 complete - Made the Hobbits".
+
 
 // ============
 // Chapter 3
 // ============
-const keepItSecretKeepItSafe = () => {
+ const keepItSecretKeepItSafe = () => {
 
-  // 1. create an empty div with an id of 'the-ring'
+   const $theRingDiv = $("<div id='the-ring'></div>");
 
-  // 2. add the ring as a child of Frodo
+   $(".hobbit").eq(0).append($theRingDiv);
 
-  // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
-
-  // when you think you have given Frodo the ring, check in your Elements tab
-
+//end of keepItSecretKeepItSafe
 };
 
 // COMMIT YOUR WORK
