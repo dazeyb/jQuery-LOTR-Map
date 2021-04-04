@@ -222,18 +222,19 @@ $(".buddy").eq(4).html("<s>Boromir<s>");
 $(".baddy").eq(2).remove();
 };
 
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 10 complete - horn of gandor blew and Boromir is dead"
+
 
 // ============
 // Chapter 11
 // ============
 const itsDangerousToGoAlone = () => {
 
-  // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
+  $(".hobbit").eq(0).appendTo("#Mordor");
+  $(".hobbit").eq(1).appendTo("#Mordor");
 
-  // 2. add a div with an id of 'mount-doom' to Mordor
+  $("#Mordor").append("<div id='mount-doom'></div>");
 
+  //I want to combine this into 1 line but couldn't get it to work
 };
 
 // COMMIT YOUR WORK
