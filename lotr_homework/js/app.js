@@ -159,17 +159,20 @@ const leaveTheShire = () => {
 
 };
 
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 6 complete - Left the Shire"
+
 
 // ============
 // Chapter 7
 // ============
 const beautifulStranger = () => {
 
-  // 1. change the buddy 'Strider' textnode to "Aragorn"
+  //$(".buddy").eq(3, "Aragorn");
 
-  // hint: You can get a list of elements by tag name, such as 'aside'
+ // $($aside).children("Strider", "Aragorn");
+
+  $(".buddy").eq(3).html("Aragorn");
+
+
 
 };
 
@@ -180,6 +183,8 @@ const beautifulStranger = () => {
 // Chapter 8
 // ============
 const forgeTheFellowShip = () => {
+
+
 
   // 1. create a new div with an id 'the-fellowship'
 
