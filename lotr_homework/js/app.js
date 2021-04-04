@@ -100,6 +100,8 @@ const makeHobbits = () => {
 
    $(".hobbit").eq(0).append($theRingDiv);
 
+
+
 //end of keepItSecretKeepItSafe
 };
 
@@ -176,24 +178,20 @@ const beautifulStranger = () => {
 
 };
 
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 7 complete - Strider is changed to Aragorn"
+
 
 // ============
 // Chapter 8
 // ============
 const forgeTheFellowShip = () => {
 
+const $theFellowship = $("<div id='the-fellowship'><h1>The Fellowship</h1></div>");
+$("#middle-earth").append($theFellowship);
 
+$("#Hobbit-List").appendTo($theFellowship);
+$("#Buddies-List").appendTo($theFellowship);
 
-  // 1. create a new div with an id 'the-fellowship'
-
-  // 2. add an h1 with the text 'The Fellowship' to this new div
-
-  // 3. append the fellowship to middle-earth
-
-  // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
-
+//end of forgeTheFellowShip
 };
 
 // COMMIT YOUR WORK
